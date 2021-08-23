@@ -247,7 +247,7 @@ public class MqMessageReceiver extends MqCommon {
 			// 11. Unkown action 메시지 처리
 			default :
 				this.handleUnkownMessage(siteDomain, msgObj);
-		}		
+		}
 	}
 
 	/**
@@ -362,7 +362,7 @@ public class MqMessageReceiver extends MqCommon {
 	 */
 	private void handlePickResponse(Domain siteDomain, String stageCd, IndicatorOnResponse indOnRes) {
 		String bizFlag = indOnRes.getBizFlag();
-		String bizId = indOnRes.getBizId();		
+		String bizId = indOnRes.getBizId();
 		Integer reqQty = indOnRes.getOrgEaQty();
 		Integer resQty = indOnRes.getResEaQty();
 		//JobInstance job = AnyEntityUtil.findEntityById(false, JobInstance.class, bizId);
